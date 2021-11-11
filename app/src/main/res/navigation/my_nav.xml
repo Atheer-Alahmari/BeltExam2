@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.almin.mainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_TV_ShowFragment"
+            app:destination="@id/TV_ShowFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fav_Fragment"
+            app:destination="@id/fav_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TV_ShowFragment"
+        android:name="com.example.almin.TV_ShowFragment"
+        android:label="fragment_t_v__show"
+        tools:layout="@layout/fragment_t_v__show" />
+    <fragment
+        android:id="@+id/fav_Fragment"
+        android:name="com.example.almin.Fav_Fragment"
+        android:label="fragment_fav_"
+        tools:layout="@layout/fragment_fav_" />
+</navigation>
